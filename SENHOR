@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor dos Anéis - Resumo dos Filmes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1, h2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trilogia Senhor dos Anéis</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="showDetails('detalhes1')">
+                    <img src="o-senhor-dos-aneis-a-sociedade-do-anel.jpg" class="card-img-top" alt="A Sociedade do Anel">
+                    <div class="card-body">
+                        <h2>A Sociedade do Anel</h2>
+                        <p class="card-text">Em "A Sociedade do Anel", Frodo Bolseiro é encarregado de destruir um anel poderoso e maligno que poderia trazer a ruína ao mundo.</p>
+                    </div>
+                </div>
+                <div id="detalhes1" class="details p-3">
+                    <h3>Detalhes de A Sociedade do Anel</h3>
+                    <p><strong>Nota da Crítica:</strong> ⭐⭐⭐⭐⭐</p>
+                    <p>Este filme é uma das melhores adaptações cinematográficas de todos os tempos! 🌟 A direção de Peter Jackson e a atuação do elenco são fenomenais.</p>
+                    <p>Opiniões: "É uma jornada épica que captura a essência das obras de Tolkien." -</p>
+                    <p>🔥 Emoção, amizade e coragem estão no coração desse filme.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="showDetails('detalhes2')">
+                    <img src="maxresdefault.jpg" class="card-img-top" alt="As Duas Torres">
+                    <div class="card-body">
+                        <h2>As Duas Torres</h2>
+                        <p class="card-text">No segundo filme, os membros da sociedade se dividem e enfrentam novos desafios e inimigos na luta contra Sauron.</p>
+                    </div>
+                </div>
+                <div id="detalhes2" class="details p-3">
+                    <h3>Detalhes de As Duas Torres</h3>
+                    <p><strong>Nota da Crítica:</strong> ⭐⭐⭐⭐</p>
+                    <p>Este filme mantém a intensidade e introduz novos personagens incríveis como Gollum! 🐍 A luta pelo bem nunca foi tão emocionante.</p>
+                    <p>Opiniões: "As batalhas são épicas e a história envolve profundamente."</p>
+                    <p>⚔️ Prepare-se para grandes momentos de ação!</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="showDetails('detalhes3')">
+                    <img src="maxresdefault (1).jpg" class="card-img-top" alt="O Retorno do Rei">
+                    <div class="card-body">
+                        <h2>O Retorno do Rei</h2>
+                        <p class="card-text">Na conclusão épica da trilogia, a guerra pela Terra Média atinge seu clímax.</p>
+                    </div>
+                </div>
+                <div id="detalhes3" class="details p-3">
+                    <h3>Detalhes de O Retorno do Rei</h3>
+                    <p><strong>Nota da Crítica:</strong> ⭐⭐⭐⭐⭐</p>
+                    <p>Uma obra-prima que fecha a trilogia com chave de ouro! 🏆 As emoções estão à flor da pele e as batalhas são absolutamente espetaculares.</p>
+                    <p>Opiniões: "Uma conclusão perfeita e emocionante, digna de Tolkien."</p>
+                    <p>👑 Que jornada incrível!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showDetails(id) {
+            var details = document.querySelectorAll('.details');
+            details.forEach(function(detail) {
+                if (detail.id === id) {
+                    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    detail.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
