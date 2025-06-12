@@ -4,70 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>MEU PORTFOLIO</title>
-    <style>
-      body {
-          background-color: #000;
-          color: #ff00c1;
-      }
-      .container {
-          margin-top: 50px;
-      }
-      h1, h2 {
-          text-align: center;
-          font-family: 'Courier New', Courier, monospace;
-      }
-      .card {
-          background-color: #ffffff1a;
-          border: 2px solid #ffffff4d;
-      }
-  </style>
+    <title>Meu portfólio</title>
 </head>
+
 <body>
-    <header class= "container text-center p-3 mb-2 bg-black text-white">
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"
-    ></script>
-         <img src="avatar-perfil.jpg" class="rounded-circle" alt="avatar do homem" width="240" srcset="">
-         <p class="lead"> <strong>Eu sou Matheus_</strong></p>
-         <h1>Eu aprendo Programação</h1>
+    <header class="container text-center">
+        <img src="avatar-perfil.jpg" alt="avatar do Matheus" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Matheus_</p>
+        <h1>Eu aprendo Programação</h1>
         <p>Bem-vindo ao meu portfólio! Atualmente, estou em uma jornada de aprendizado na área da programação. Apesar de ainda
-          ter um conhecimento limitado, minha determinação em expandir minhas habilidades me motiva a enfrentar novos desafios
-          diariamente. Acredito que cada linha de código representa uma oportunidade de crescimento e descoberta. Neste
-         espaço, compartilho meus projetos e conquistas, refletindo meu empenho e desejo genuíno de me aprimorar. Estou
-         ansioso para continuar essa trajetória e explorar o vasto mundo da tecnologia.</p>
-        <p>O que quero aprender</p>
+            ter um conhecimento limitado, minha determinação em expandir minhas habilidades me motiva a enfrentar novos desafios
+            diariamente. Acredito que cada linha de código representa uma oportunidade de crescimento e descoberta. Neste
+           espaço, compartilho meus projetos e conquistas, refletindo meu empenho e desejo genuíno de me aprimorar. Estou
+           ansioso para continuar essa trajetória e explorar o vasto mundo da tecnologia.</p>
+          <p>O que quero aprender</p>
         <div>
-            <p class="badge text-bg-secondary">HTML</p>
-            <p class="badge text-bg-secondary">CSS</p>
-            <p class="badge text-bg-secondary">JavaScript</p>
-            <p class="badge text-bg-secondary">Scratch</p>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
         </div>
-     </header>
-     <main class= "container">
-        <h2>Meus Projetos:</h2>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
         <div class="row">
-             <div class="col-md-4">
-                <div class="card text-white" style="width: 18rem;">
-                    <img src="Captura de tela_2025-04-29_08-03-23.png" class="card-img-top" alt=" ">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="projeto-1.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">Um site com minhas opiniões sobre a triologia Senhor dos Anéis.</p>
-                      <a href="SENHOR" class="btn btn-primary">Clique Aqui!</a>
+                        <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                        <p class="card-text">Este projeto é uma página web que apresenta uma lista dos meus livros
+                            favoritos, incluindo informações sobre os autores, datas de publicação e links para compra
+                            na Amazon. A página é estilizada com CSS para uma visualização agradável e usa fontes
+                            externas do Google Fonts.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
                     </div>
-                  </div>
-             </div>
+                </div>
+            </div>
 
-        </div>
-     </main>
+            <div class="modal" id="modal1" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Vapor Dreams é um site dedicado a explorar e celebrar os estilos artísticos do vaporwave e do cyberpunk, duas correntes que conquistaram fãs ao redor do mundo por sua estética futurista e nostálgica. O vaporwave surgiu na década de 2010, inspirado por uma mistura de cultura pop dos anos 80 e 90, música eletrônica, e uma estética que mistura o retrô com o surreal. Já o cyberpunk, com raízes nas décadas de 1980 e 1990, é um gênero que mistura tecnologia avançada com um ambiente distópico, refletindo sobre o impacto da inovação na sociedade. Nosso site busca oferecer uma experiência visual imersiva, apresentando obras que capturam a essência desses universos.</p>
+                            <p>A exposição de arte no Vapor Dreams apresenta uma variedade de trabalhos que exploram essas temáticas, desde ilustrações digitais até instalações conceituais. Os visitantes podem se deparar com imagens que remetem às paisagens neon, às cidades futurísticas e às atmosferas oníricas típicas do vaporwave, assim como a estética sombria, tecnológica e distópica do cyberpunk. Cada peça foi cuidadosamente selecionada para transmitir a atmosfera única de cada gênero, convidando os visitantes a refletirem sobre o futuro, a nostalgia e a evolução da cultura pop.</p>
+                            <p>Além das obras de arte, o site oferece uma coleção de wallpapers exclusivos que representam cenas emblemáticas de vaporwave e cyberpunk. Esses wallpapers podem ser utilizados para personalizar dispositivos, trazendo uma estética futurista e retrô ao cotidiano. São imagens que combinam cores vibrantes, elementos glitch, geometria abstrata e cenas urbanas iluminadas por neon, permitindo que os usuários mergulhem nesses universos mesmo fora da exposição virtual.</p>
+                            <p>Historicamente, tanto o vaporwave quanto o cyberpunk representam movimentos culturais que questionam e reinterpretam o futuro e o passado. O vaporwave, com sua estética de nostalgia e crítica ao consumismo, ganhou força na internet através de comunidades que compartilham música e arte. O cyberpunk, por sua vez, influenciou diversas mídias, incluindo filmes, jogos e literatura, ao imaginar futuros distópicos onde a tecnologia e a sociedade colidem. No Vapor Dreams, buscamos homenagear essas raízes enquanto oferecemos uma plataforma para a criatividade contemporânea, conectando o passado e o futuro através da arte digital.</p>
+                            <img src="projeto-1.png" style="width: 29rem;" alt="Imagem representativa do projeto da exposição online">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://github.com/Corrupt-org/VAPOR-DREAMS">Ver código do projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <footer class="container">
-        <h2>Contato:</h2>
-        <a href="https://github.com/Corrupt-org">Github</a>
-    </footer>
-
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/Corrupt-org">GitHub</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
